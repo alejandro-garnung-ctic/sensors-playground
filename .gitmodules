@@ -1,0 +1,3 @@
+[submodule "oak-d_pro/depthaiv3/depthai-core"]
+	path = oak-d_pro/depthaiv3/depthai-core
+	url = https://github.com/luxonis/depthai-core.git
