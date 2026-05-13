@@ -61,3 +61,23 @@ Pensada para SLAM, reconstrucción 3D densa, detección de obstáculos y odometr
 Destaca por ejecutar redes neuronales (detección, segmentación, tracking) directamente en el VPU sin necesidad de GPU en el host. El SDK usa una API de pipeline/grafos de nodos que se compila y ejecuta en el dispositivo.
 
 → [`oak-d_pro/`](oak-d_pro/)
+
+---
+
+### Slamtec RPLIDAR A3 (M1R1)
+
+| Campo | Valor |
+|-------|-------|
+| Tipo | LiDAR **2D rotatorio** (triangulación láser) |
+| Rango de distancia | 0.2 m – 25 m |
+| Ángulo de barrido | 360° |
+| Frecuencia de barrido | 5 – 20 Hz (ajustable) |
+| Muestras por segundo | hasta 16.000 |
+| Resolución angular | ≈ 0.225° a 10 Hz |
+| Conexión | USB (CP2102 USB-to-UART, baud rate **256.000**) |
+| SDK | `rplidar-robotics` |
+| Estado | **En producción** |
+
+Escáner láser plano ideal para mapas 2D, detección de obstáculos y SLAM en plano horizontal. Al ser 2D no captura profundidad tridimensional, pero su simplicidad y velocidad lo hacen muy habitual en robótica móvil y entornos de desarrollo.
+
+→ [`rplidar_a3-m1r1/`](rplidar_a3-m1r1/)
